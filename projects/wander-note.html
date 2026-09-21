@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wander Note — 홍길동</title>
+    <meta name="description" content="여행 기록 웹 프로젝트 Wander Note 상세" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="logo" href="../index.html" aria-label="홍길동 홈">
+          <span class="logo-mark" aria-hidden="true">HG</span>
+          <span class="logo-text">Hong Gildong</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="메뉴 열기"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="주요">
+          <ul>
+            <li><a href="../index.html#about">소개</a></li>
+            <li><a href="../index.html#projects">프로젝트</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="detail">
+      <div class="container">
+        <a class="detail-back" href="../index.html#projects">← 프로젝트 목록</a>
+
+        <div class="detail-hero">
+          <img src="../assets/project-travel.jpg" alt="Wander Note 여행 기록 화면" />
+        </div>
+
+        <p class="detail-meta">Mobile Web · 2024</p>
+        <h1>Wander Note</h1>
+        <p class="detail-lead">
+          여행 사진과 짧은 메모를 카드로 남기는 모바일 웹 저널입니다. 한 손으로
+          빠르게 남기고, 나중에 장소별로 다시 찾아보는 흐름에 맞춰 설계했습니다.
+        </p>
+
+        <div class="detail-grid">
+          <div class="detail-copy">
+            <p>
+              홈은 사진 그리드, 상세는 메모와 날짜가 함께 보이는 카드 레이아웃으로
+              나눴습니다. 스크롤 부담을 줄이기 위해 첫 화면에서 최근 여행만 먼저
+              보여주고, 이전 기록은 점진적으로 불러오도록 구성했습니다.
+            </p>
+            <p>
+              터치 영역과 제스처를 넓혀 이동 중에도 입력이 끊기지 않게 했고,
+              반응형 그리드로 작은 화면에서도 이미지가 잘리지 않도록 맞췄습니다.
+            </p>
+          </div>
+          <aside class="detail-aside">
+            <h2>역할</h2>
+            <p>UX, 프론트엔드 구현</p>
+            <h2>스택</h2>
+            <ul>
+              <li>Responsive</li>
+              <li>UI</li>
+              <li>Vanilla JS</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> 홍길동</p>
+        <a href="#top">맨 위로</a>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>홍길동 — Portfolio</title>
+    <meta name="description" content="소프트웨어 엔지니어 홍길동의 포트폴리오" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="logo" href="#top" aria-label="홍길동 홈">
+          <span class="logo-mark" aria-hidden="true">HG</span>
+          <span class="logo-text">Hong Gildong</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="메뉴 열기"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="주요">
+          <ul>
+            <li><a href="#about">소개</a></li>
+            <li><a href="#projects">프로젝트</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/hero.jpg"
+          alt="야간 작업실에서 모니터 앞에 앉아 있는 개발자의 장면"
+        />
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Software Engineer</p>
+          <h1 id="hero-title">홍길동</h1>
+          <p class="hero-lead">
+            복잡한 문제를 단순한 인터페이스로 풀어내는<br />
+            프론트엔드 중심의 소프트웨어 엔지니어입니다.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">프로젝트 보기</a>
+            <a class="btn btn-ghost" href="#contact">함께 일하기</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2>사용자 경험과<br />성능을 같이 봅니다.</h2>
+          </div>
+          <p class="about-copy">
+            웹 제품의 구조, 인터랙션, 접근성을 중심으로 일합니다. 작은 디테일이
+            신뢰를 만든다고 믿으며, 읽기 쉬운 코드와 명확한 UI를 선호합니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Selected Work</p>
+            <h2>프로젝트</h2>
+          </div>
+
+          <div class="project-grid">
+            <a class="project-card" href="projects/ledger-flow.html">
+              <div class="card-media">
+                <img
+                  src="assets/project-finance.jpg"
+                  alt="다크 테마 금융 대시보드 화면"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-meta">Product · 2025</p>
+                <h3>Ledger Flow</h3>
+                <p>
+                  지출과 투자 흐름을 한눈에 보는 개인 금융 대시보드. 실시간
+                  차트와 카드형 인사이트를 중심으로 설계했습니다.
+                </p>
+                <ul class="tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+            </a>
+
+            <a class="project-card" href="projects/wander-note.html">
+              <div class="card-media">
+                <img
+                  src="assets/project-travel.jpg"
+                  alt="여행 기록 앱의 사진 그리드 화면"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-meta">Mobile Web · 2024</p>
+                <h3>Wander Note</h3>
+                <p>
+                  여행 사진과 짧은 메모를 카드로 남기는 모바일 웹 저널. 터치
+                  제스처와 빠른 탐색에 초점을 맞췄습니다.
+                </p>
+                <ul class="tags">
+                  <li>Responsive</li>
+                  <li>UI</li>
+                  <li>Vanilla JS</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container contact-inner">
+          <p class="eyebrow">Contact</p>
+          <h2>다음 프로젝트에<br />같이 참여하고 싶습니다.</h2>
+          <a class="btn btn-primary" href="mailto:gildong.hong@example.com"
+            >gildong.hong@example.com</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> 홍길동</p>
+        <a href="#top">맨 위로</a>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

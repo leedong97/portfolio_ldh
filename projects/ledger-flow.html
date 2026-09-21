@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ledger Flow — 홍길동</title>
+    <meta name="description" content="개인 금융 대시보드 프로젝트 Ledger Flow 상세" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="logo" href="../index.html" aria-label="홍길동 홈">
+          <span class="logo-mark" aria-hidden="true">HG</span>
+          <span class="logo-text">Hong Gildong</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="메뉴 열기"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="주요">
+          <ul>
+            <li><a href="../index.html#about">소개</a></li>
+            <li><a href="../index.html#projects">프로젝트</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="detail">
+      <div class="container">
+        <a class="detail-back" href="../index.html#projects">← 프로젝트 목록</a>
+
+        <div class="detail-hero">
+          <img src="../assets/project-finance.jpg" alt="Ledger Flow 대시보드 화면" />
+        </div>
+
+        <p class="detail-meta">Product · 2025</p>
+        <h1>Ledger Flow</h1>
+        <p class="detail-lead">
+          지출과 투자 흐름을 한눈에 보는 개인 금융 대시보드입니다. 복잡한 숫자를
+          카드와 차트로 정리해, 지금 어디에 돈이 묶여 있는지 바로 파악할 수
+          있게 만들었습니다.
+        </p>
+
+        <div class="detail-grid">
+          <div class="detail-copy">
+            <p>
+              월별 현금 흐름, 카테고리 비중, 단기 목표 달성률을 하나의 화면에서
+              볼 수 있도록 정보 구조를 재배치했습니다. 핵심 지표는 상단 카드에
+              고정하고, 상세 추이는 스크롤 영역으로 분리했습니다.
+            </p>
+            <p>
+              차트 인터랙션과 필터는 바닐라 JavaScript로 처리해 가벼운 로딩을
+              유지했습니다. 다크 테마를 기본으로 해 장시간 사용에도 눈이 덜
+              피로하도록 대비와 여백을 조정했습니다.
+            </p>
+          </div>
+          <aside class="detail-aside">
+            <h2>역할</h2>
+            <p>UI 설계, 프론트엔드 구현</p>
+            <h2>스택</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> 홍길동</p>
+        <a href="#top">맨 위로</a>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
